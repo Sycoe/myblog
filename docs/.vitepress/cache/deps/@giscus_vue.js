@@ -5,7 +5,7 @@ import {
   onMounted,
   openBlock,
   ref
-} from "./chunk-DDXJJ377.js";
+} from "./chunk-HVR2FF6M.js";
 
 // node_modules/@giscus/vue/dist/index.js
 var d = ["id", "host", "repo", "repoid", "category", "categoryid", "mapping", "term", "strict", "reactionsenabled", "emitmetadata", "inputposition", "theme", "lang", "loading"];

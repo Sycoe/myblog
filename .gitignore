@@ -1,0 +1,2 @@
+# 忽略 gh-pages 缓存
+node_modules/.cache/gh-pages/

@@ -3,19 +3,39 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "generate": "node scripts/gen-posts-index.js",
     "tsc": "tsc",
     "docs:dev": "vitepress dev docs --config docs/.vitepress/config.js",
-    "docs:build": "vitepress build docs --config docs/.vitepress/config.js",
+    "generate-posts-index": "node scripts/gen-posts-index.js",
+    "docs:build": "npm run generate && vitepress build docs --config docs/.vitepress/config.js",
     "docs:serve": "vitepress serve docs --config docs/.vitepress/config.js",
     "deploy": "npm run docs:build && gh-pages -d docs/.vitepress/dist"
   },
   "devDependencies": {
     "@types/node": "^24.0.13",
     "gh-pages": "^6.3.0",
+    "gray-matter": "^4.0.3",
     "typescript": "^5.8.3",
-    "vitepress": "^1.6.3"
+    "vitepress": "^1.6.3",
+    "vue": "^3.5.18"
   },
   "dependencies": {
     "@giscus/vue": "^3.1.1"
-  }
+  },
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sycoe/myblog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sycoe/myblog/issues"
+  },
+  "homepage": "https://github.com/Sycoe/myblog#readme",
+  "description": ""
 }
